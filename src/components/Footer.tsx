@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     <footer className="border-t border-border py-8 px-4 md:px-8">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="text-xs text-muted-foreground font-medium">
-          {socialData.gamerTag}
+          {socialData.tag}
         </span>
 
         <div className="flex items-center gap-4">

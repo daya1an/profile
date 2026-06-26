@@ -8,7 +8,6 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => (
@@ -23,7 +22,6 @@ const App: React.FC = () => (
         <Education />
         <Projects />
         {/* <Achievements /> */}
-        <Contact />
       </main>
       <Footer />
     </div>

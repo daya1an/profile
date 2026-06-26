@@ -158,5 +158,5 @@ export function getIconUrl(skill: Skill): string {
   if (skill.icon !== "auto") return skill.icon;
   const key = deviconMap[skill.name];
   if (!key) return "";
-  return `https://raw.githubusercontent.com/daya1an/portfolio/main/assets/icons/${key}`;
+  return `https://raw.githubusercontent.com/daya1an/profile/main/assets/icons/${key}`;
 }

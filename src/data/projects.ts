@@ -31,10 +31,10 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/daya1an/sentiment-ledger"
   },
   {
-    title: "My Portfolio Website",
-    description: "My personal portfolio is a fast, modern platform built to showcase my professional career, accelerated through vibe-coding with Lovable. Powered by React, TypeScript, Vite, Bun, Tailwind, and PrimeReact, it features a decoupled architecture where all content is isolated in src/data/ for effortless updates. The design merges a sleek, minimalistic black-and-white layout with custom minimalistic accents, delivering a unique yet professional outlook and   experience.",
+    title: "My profile Website",
+    description: "My personal profile is a fast, modern platform built to showcase my professional career, accelerated through vibe-coding with Lovable. Powered by React, TypeScript, Vite, Bun, Tailwind, and PrimeReact, it features a decoupled architecture where all content is isolated in src/data/ for effortless updates. The design merges a sleek, minimalistic black-and-white layout with custom minimalistic accents, delivering a unique yet professional outlook and   experience.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "PrimeReact"],
     featured: true,
-    githubUrl: "https://github.com/daya1an/portfolio"
+    githubUrl: "https://github.com/daya1an/profile"
   },
 ];

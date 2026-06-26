@@ -1,5 +1,5 @@
 export const navigationData = {
-  brand: "DAYALAN D S",
+  brand: "",
   links: [
     { label: "HOME", href: "#hero" },
     { label: "ABOUT", href: "#about" },
@@ -8,6 +8,5 @@ export const navigationData = {
     { label: "EDUCATION", href: "#education" },
     { label: "PROJECTS", href: "#projects" },
     // { label: "ACHIEVEMENTS", href: "#achievements" },
-    { label: "CONTACT", href: "#contact" },
   ],
 };

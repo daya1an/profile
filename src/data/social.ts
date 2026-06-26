@@ -5,7 +5,7 @@ export const socialData = {
     { platform: "Email", url: "mailto:dayalands2210@gmail.com", icon: "mail" },
     { platform: "Instagram", url: "https://www.instagram.com/_d.a.y.a.l.a.n_", icon: "instagram" },
   ],
-  gamerTag: "DAYALAN D S",
+  tag: "DAYALAN D S",
   discord: "",
 };
 
