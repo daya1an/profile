@@ -16,14 +16,13 @@ export const experienceData: Experience[] = [
     description:
       "Base - Mainframe application, Functioning as SPOC for the Modernized Part of this Application",
     highlights: [
-      "Developing APIs serving 25+ apps, supporting enterprise reporting infrastructure and audit requirements at sub-100ms latency.",
-      "Maintaining batch processing applications, processing millions of records daily, by periodically pulling differnet formats of data from enterprise platforms into GCS, transforming it into differnt format, and transferring it via SFTP.",
-      "Migrated 10 REST endpoints to GraphQL over BigQuery, reducing payload size for downstream applications by eliminating over-fetching.",
-      "Optimized Bigquery stored procedures, reducing ETL job execution time by 35% and eliminating data reconciliation errors.",
-      "Deployed workloads on GCP Cloud Run, configured Cloud Scheduler for daily batch processing and provisioned APIGEE for API with robust security measures.",
+      "Maintaining Spring Batch jobs processing 10k+ daily records, pulling multi-format data from enterprise platforms into GCS buckets.",
+      "Automating input & output file storage in GCS buckets, multi-format data transformation, and SFTP delivery to downstream systems.",
+      "Rapidly deploying workloads on GCP Cloud Run with Cloud Scheduler for daily batch processing, configured via Terraform.",
+      "Orchestrating Tekton CI/CD pipelines, resolving pipeline failures, and migrating it to GitHub Actions for improved workflow reliability.",
     ],
     tech: [
-      "React","Redux","TypeScript","Spring","GraphQL","IBM DB2","PostgreSQL","GCP","Batch Processing"],
+      "React","Redux","TypeScript","Spring","IBM DB2","BigQuery","GCP","Batch Processing"],
     level: 5,
   },
   {
@@ -43,36 +42,36 @@ export const experienceData: Experience[] = [
     level: 4,
   },
   {
-    title: "Brand Protection System",
+    title: "Global Brand Protection System",
     company: "Legacy Application Modernization",
     period: "2025Q4 – 2026Q1",
     description:
       "Modernized legacy applications by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
     highlights: [
-      "Rewrote legacy UI and built reusable react comps with custom hooks, wrapper classes and context API, aligned with enterprise standards.",
-      "Implemented DB‑driven dropdowns and virtualized data tables, achieving sub‑150 ms render time for minimum 10k+ rows.",
-      "Enforced AES-GCM for PII/SPII data, remediated 60+ OWASP issues, achieving full compliance with 42Crunch and GCP Cloud Armor WAF.",
-      "Implemented SDD and resolved 42Crunch defects to maintain secure API design standards via via code reviews and security validation.",
-      "Built APIs by applying SOLID principles and Domain Driven Design, with Redis caching, pagination, rate limiting, and query optimization.",
-      "In UAT testing, leveraged GitHub Copilot with JUnit & Mockito to build test suites validating complex business logic and edge cases."
+      "Rewrote legacy UI and built reusable react components with custom hooks and wrapper classes, aligned with enterprise standards",
+      "Implemented DB-driven dynamic dropdowns and paginated data tables with robust input validation and optimized backend integration.",
+      "Enforced data governance and privacy controls for PII/SPII data through AES-GCM encryption and secure data handling strategies.",
+      "Remediated 50+ vulnerabilities identified by 42Crunch, SonarQube, Fossa and Cycode, ensuring alignment with enterprise standards. ",
+      "Built APIs and Batch Jobs by applying DDD, SDD and SOLID principles with Redis caching, pagination, rate limiting, and query optimization.",
+      "Adopted TDD using GitHub Copilot with JUnit and Mockito to build robust test suites validating complex business logic and edge cases."
     ],
-    tech: ["React", "TypeScript", "Tailwind CSS", "Spring", "Redis", "MongoDB Atlas", "GCP", "ADFS","Tekton"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "Spring", "Redis", "PostgreSQL", "GCP", "ADFS","Tekton"],
     level: 3,
   },
   {
-    title: "Inventory Catalog",
+    title: "Global Catalog",
     company: "Enhancement Project",
     period: "2025Q1 – 2025Q3",
     description:
       "Enhanced application's modules by delivering new features, building resilient APIs, strengthening authentication, and streamlining CI/CD for performance and security.",
     highlights: [
       "Developed responsive web pages incorporating features such as lazy loading, breadcrumb navigation, and authorization strategies.",
-      "Implemented ACID compliant CRUD services and concurrent batch jobs using Spring Data – JPA & Hibernate, Batch, MVC, and Security.",
-      "Built Pub/Sub APIs with WebFlux and Virtual Threads for non-blocking, high-throughput event processing via Java concurrency.",
+      "Built reusable shared modules with complex business-critical logic with enhanced capabilities beyond the legacy application.",
+      "Delivered resilient REST APIs backed by ACID-compliant CRUD services using Spring - Data, MVC, Web and Security.",
+      "Built APIs integrated with message queues for event-driven processing and reliable message persistence on every write operation.",
       "Implemented Redis-backed JWT caching for Entra ID OIDC, cutting auth latency 50% with token expiry and revocation enforcement.",
       "Enabled pre-authorized service‑to‑service communication using Spring Cloud & RestTemplate across 10 distributed microservices.",
-      "Led CI/CD migration from Tekton to GitHub Actions, improving deployment reliability and reducing deployment time by 60%.",
-      "Conducted peer code reviews, implemented robust test cases, and enhanced coding standards by remediating vulnerabilities flagged by SAST tools (SonarQube, Fossa, Cycode)."
+      "Resolved an Apigee API Gateway file transfer limitation by architecting a GCS bucket solution with signed URLs for secure access."
     ],
     tech: ["Angular","TypeScript","PrimeNG","Spring","PostgreSQL","GCP","Entra ID","Pub/Sub","Redis","GitHub Actions"],
     level: 2,
@@ -84,10 +83,10 @@ export const experienceData: Experience[] = [
     description:
       "Modernized legacy infrastructure by upgrading codebase, migrating workloads to OpenShift, strengthening API security, and optimizing batch operations with enterprise standards.",
     highlights: [
-      "Modernized codebase by migrating from Java 8 & Spring 2.x to Java 17 & Spring 3.x, and shifting build system from Ant to Gradle with JARs managed in JFrog Artifactory.",
-      "Migrated the Legacy Monolithic WAS Liberty app from PCF and AWS to RedHat Quay & OpenShift and configured Tekton PAC pipeline, reducing deployment time, effort, and cost by 50%.",
-      "Developed and deployed CRUD APIs on OpenShift, utilizing resources like Deployments, Cronjobs, Secrets, Services, Ingress, Egress, Routes, and Prometheus.",
-      "Integrated Splunk & Dynatrace via sidecar containers for LnP Testing and enabling proactive incident response and reduced MTTR.",
+      "Migrated WAS Liberty app from PCF to RedHat Quay & OpenShift, moving S3/SMB to PVC and Nexus/local jars to JFrog Artifactory.",
+      "Shifted build system from Ant to Gradle and enabled Ecoboost Tekton PAC pipeline, reducing deployment complexity and time.",
+      "Deployed APIs and Jobs, using Deployments, Services, Ingress, Egress, Routes, and Secrets, while ensuring Kyverno policy compliance.",
+      "Developed Docker File and integrated Dynatrace and Splunk via sidecar containers to carry out Load and Performance Testing.",
       "Strengthened release governance and security via CI/CD, DevSecOps, auth controls, and Apigee for APIs consumed by 5+ internal apps.",
       "Led reverse KT sessions, mentoring team members on CronJob scheduling, SSL/DNS mapping, and alerts and rules for batch APIs.",
       "Managed OpenShift CronJob deployments for batch jobs, optimizing cost and performance while ensuring Kyverno policy compliance."
