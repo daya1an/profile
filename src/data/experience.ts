@@ -17,7 +17,7 @@ export const experienceData: Experience[] = [
       "Base - Mainframe application, birth place of Engineering and Serive Parts Details. Functioning as SPOC for the Modernized Part of this Application.",
     highlights: [
       "Maintaining ETL jobs ingesting multi-format files from enterprise platforms into GCS, generating mainframe-readable outputs of 10K+ records per run.",
-      "Leveraged GCS Buckets for file I/O files management and optimized SFTP transfers with email notifications, surpassing mainframe capabilities.",
+      "Leveraged GCS Buckets for I/O files management and optimized SFTP transfers with email notifications, surpassing mainframe capabilities.",
       "Provisioned GCP Cloud Run and Cloud Scheduler with Terraform, enabling fully automated daily batch processing with zero manual intervention.",
       "Resolved Tekton PAC pipeline failures and leading migration to GitHub Actions, improving CI/CD reliability and pipeline scalability.",
     ],

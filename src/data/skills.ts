@@ -30,6 +30,7 @@ export const skillsData: { categories: SkillCategory[] } = {
         { name: "Redux", icon: "auto", level: 82 },
         { name: "HTML5", icon: "auto", level: 95 },
         { name: "CSS3", icon: "auto", level: 90 },
+        { name: "Tailwind CSS", icon: "auto", level: 90 },
       ],
     },
     {
@@ -111,6 +112,7 @@ const deviconMap: Record<string, string> = {
   "Redux": "redux.svg",
   "HTML5": "html5.svg",
   "CSS3": "css3.svg",
+  "Tailwind CSS": "tailwind.svg",
 
   "Spring Framework": "springframework.svg",
   "Spring Boot": "springboot.svg",
