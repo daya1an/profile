@@ -14,7 +14,7 @@ export const experienceData: Experience[] = [
     company: "New App Development",
     period: "2026Q2 – Present",
     description:
-      "Base - Mainframe application, Functioning as SPOC for the Modernized Part of this Application",
+      "Base - Mainframe application, birth place of Engineering and Serive Parts Details. Functioning as SPOC for the Modernized Part of this Application.",
     highlights: [
       "Maintaining ETL jobs ingesting multi-format files from enterprise platforms into GCS, generating mainframe-readable outputs of 10K+ records per run.",
       "Leveraged GCS Buckets for file I/O files management and optimized SFTP transfers with email notifications, surpassing mainframe capabilities.",
@@ -38,7 +38,7 @@ export const experienceData: Experience[] = [
     company: "COTS Application - Infrastructure Migration",
     period: "2025Q3 – Present",
     description:
-      "Enabling successful migration by providing architecture, design, and technical guidance to vendor teams, ensuring alignment with enterprise standards and scalable migration practices.",
+      "An Ecommerce Site that allows users to browse ford vehicles and its associated parts. Enabling successful migration by providing architecture, design, and technical guidance to vendor teams, ensuring alignment with enterprise standards and scalable migration practices.",
     highlights: [
       "Owning infrastructure responsibilities and providing assistance on CaaS Services, monitoring, and troubleshooting to ensure availability and integrity.",
       "Migrated MS SQL Server to GCP Cloud SQL, transitioning data sources, configuring DDL/DML, and maintaining infrastructure automation with Terraform.",
@@ -63,7 +63,7 @@ export const experienceData: Experience[] = [
     company: "Legacy Application Modernization",
     period: "2025Q4 – 2026Q1",
     description:
-      "Modernized legacy applications by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
+      "An application used to seek Exemptions approvals and track trademark compliance, which connects Global Analysts and Supervisors, to raise Requests, Proposals, and Approvals. Modernized this legacy application by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
     highlights: [
       "Rebuilt legacy UI with reusable React components, custom hooks, and wrapper classes, reducing cross-team UI development effort by 25%.",
       "Implemented DB-driven dropdowns and dynamic tables with robust input validation, improving data load efficiency for large-volume datasets.",
@@ -90,7 +90,7 @@ export const experienceData: Experience[] = [
     company: "Enhancement Project",
     period: "2025Q1 – 2025Q3",
     description:
-      "Enhanced application's modules by delivering new features, building resilient APIs, strengthening authentication, and streamlining CI/CD for performance and security.",
+      "An Inventory Management System that retrieves part details from Parts Control, allows users to catalog them, and distributes the information to multiple downstream systems. Enhanced application's modules by delivering new features, building resilient APIs, strengthening authentication, and streamlining CI/CD for performance and security.",
     highlights: [
       "Built Angular components including dynamic tables, tree views, and modals, delivering intuitive UI and seamless interactions.",
       "Developed reusable Angular shared modules encapsulating complex business-critical logic, extending application capabilities beyond the legacy system.",
@@ -115,11 +115,11 @@ export const experienceData: Experience[] = [
     level: 2,
   },
   {
-    title: "Packaging & Logistics Application",
+    title: "Global Service Parts Packaging System",
     company: "Legacy Application - Infrastructure Migration",
     period: "2024Q1 – 2026Q3",
     description:
-      "Modernized legacy infrastructure by upgrading codebase, migrating workloads to OpenShift, strengthening API security, and optimizing batch operations with enterprise standards.",
+      "Global Application for creating and managing packaging and logistics specifications of Engineering and Service Parts. Modernized legacy infrastructure by upgrading codebase, migrating workloads to OpenShift, strengthening API security, and optimizing batch operations with enterprise standards.",
     highlights: [
       "Migrated Legacy WAS Liberty application from PCF to Red Hat OpenShift, eliminating AWS S3 and SMB-NAS dependencies by relocating storage to PVC and migrating artifacts from Nexus and local jars to JFrog Artifactory.",
       "Shifted build system from Ant to Gradle and enabled Tekton PAC pipelines, reducing deployment complexity and time significantly.",
