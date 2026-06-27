@@ -24,7 +24,7 @@ export const educationData: EducationItem[] = [
     ],
     honors: [
       "First Class with Distinction",
-      "Mahatma Gandhi Merit Scholarship (4 consecutive years)",
+      "Merit Scholarship for 4 years",
     ],
   },
   //   {

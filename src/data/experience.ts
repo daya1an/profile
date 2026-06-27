@@ -38,7 +38,7 @@ export const experienceData: Experience[] = [
     company: "COTS Application - Infrastructure Migration",
     period: "2025Q3 – Present",
     description:
-      "An Ecommerce Site that allows users to browse ford vehicles and its associated parts. Enabling successful migration by providing architecture, design, and technical guidance to vendor teams, ensuring alignment with enterprise standards and scalable migration practices.",
+      "An Ecommerce Site that allows users to browse ford vehicles and its associated part details. Enabling successful migration by providing architecture, design, and technical guidance to vendor teams, ensuring alignment with enterprise standards and scalable migration practices.",
     highlights: [
       "Owning infrastructure responsibilities and providing assistance on CaaS Services, monitoring, and troubleshooting to ensure availability and integrity.",
       "Migrated MS SQL Server to GCP Cloud SQL, transitioning data sources, configuring DDL/DML, and maintaining infrastructure automation with Terraform.",
@@ -63,7 +63,7 @@ export const experienceData: Experience[] = [
     company: "Legacy Application Modernization",
     period: "2025Q4 – 2026Q1",
     description:
-      "An application used to seek Exemptions approvals and track trademark compliance, which connects Global Analysts and Supervisors, to raise Requests, Proposals, and Approvals. Modernized this legacy application by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
+      "An application used to seek Exemptions approvals and track Trademark compliance, which connects Global Analysts and Supervisors, to raise Requests, Proposals, and Approvals. Modernized this legacy application by rebuilding UI, optimizing data handling, enforcing security standards, and delivering resilient APIs with enterprise compliance.",
     highlights: [
       "Rebuilt legacy UI with reusable React components, custom hooks, and wrapper classes, reducing cross-team UI development effort by 25%.",
       "Implemented DB-driven dropdowns and dynamic tables with robust input validation, improving data load efficiency for large-volume datasets.",
