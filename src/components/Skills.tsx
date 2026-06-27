@@ -25,8 +25,12 @@ const Skills: React.FC = () => {
       headerAction={
         <motion.button
           type="button"
-          whileHover={{ scale: 1.02, y: -1 }}
-          whileTap={{ scale: 0.97 }}
+          animate={{
+            backgroundColor: revealAll ? "#111827" : "transparent",
+            color: revealAll ? "#f9fafb" : "var(--foreground)",
+          }}
+          whileHover={{ scale: 1.02, y: -1, backgroundColor: revealAll ? "#111827" : "rgba(255,255,255,0.06)" }}
+          whileTap={{ scale: 0.96, backgroundColor: revealAll ? "#1f2937" : "rgba(255,255,255,0.12)", color: "#f9fafb" }}
           transition={{ duration: 0.2, ease: "easeOut" }}
           onClick={toggleRevealAll}
           className={`rounded-lg border px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] transition-all duration-300 ${

@@ -2,7 +2,7 @@ export const profileData = {
   name: "Dayalan D.S.", //
   role: "​Full Stack Engineer  •  Microservices  •  Cloud Architecture  •  DevSecOps •  AI/ML Integration  •  Big Data ",
   tagline:
-    "A Full Stack Engineer with 3 years of experience across distributed systems, microservices, and cloud-native applications.",
+    "A Full-Stack Engineer with 3 years of experience across the complete SDLC, specializing in distributed systems, microservices, and cloud‑native applications.",
   greeting: "Hello World! You gonna know about ...",
   bio: [
     "Full Stack Engineer at Ford GTBC Chennai, with 3 years of experience of delivering secure, scalable applications across enterprise-grade microservices and distributed systems, from architecture and design through to production support.",

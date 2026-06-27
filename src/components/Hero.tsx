@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { profileData } from "../data/profile";
 import { socialData } from "../data/social";
-import { ArrowDown, Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Instagram, Linkedin } from "lucide-react";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -92,41 +92,36 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: revealedStep >= 4 ? 1 : 0, y: revealedStep >= 4 ? 0 : 14 }}
             transition={{ duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="flex flex-col items-center gap-8 lg:items-start"
+            className="flex flex-col items-center gap-4 lg:items-start w-full"
           >
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <a
-                href="https://raw.githubusercontent.com/daya1an/profile/main/assets/Dayalan%20D%20S%20Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
-              >
-                <Download size={16} />
-                <span>Download Resume</span>
-              </a>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium border border-border text-foreground rounded-md hover:bg-muted transition-colors duration-200"
-              >
-                <Mail size={16} />
-                <span>Contact Me</span>
-              </button>
-            </div>
+            <motion.a
+              href="https://raw.githubusercontent.com/daya1an/profile/main/assets/Dayalan%20D%20S%20Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              whileHover={{ scale: 1.02, y: -2, boxShadow: "0 10px 25px rgba(0,0,0,0.15)" }}
+              whileTap={{ scale: 0.96, backgroundColor: "#1f2937", color: "#f9fafb" }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+              className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
+            >
+              <Download size={16} />
+              <span>Get my Resume</span>
+            </motion.a>
 
-            <div className="flex items-center gap-6">
-              {socialLinks.map(({ platform, url }) => (
-                <a
+            <div className="flex items-center justify-between gap-3 w-full">
+              {socialLinks.map(({ platform, url }, index) => (
+                <motion.a
                   key={platform}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={platform}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 + index * 0.08, duration: 0.3 }}
+                  whileHover={{ y: -3, scale: 1.06, backgroundColor: "#111827", color: "#f9fafb", borderColor: "#111827" }}
+                  whileTap={{ scale: 0.92, backgroundColor: "#1f2937", color: "#f9fafb", borderColor: "#1f2937" }}
+                  className="inline-flex h-11 flex-1 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted"
                 >
                   {platform === "GitHub" ? (
                     <Github size={18} />
@@ -135,7 +130,7 @@ const Hero: React.FC = () => {
                   ) : (
                     <Instagram size={18} />
                   )}
-                </a>
+                </motion.a>
               ))}
             </div>
           </motion.div>
