@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { profileData } from "../data/profile";
 import { socialData } from "../data/social";
-import { ArrowDown, Download, Github, Instagram, Linkedin } from "lucide-react";
+import { ArrowDown, Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
   const [revealedStep, setRevealedStep] = useState(0);
   const fullText = profileData.greeting;
   const socialLinks = socialData.links.filter(({ platform }) =>
-    ["GitHub", "LinkedIn", "Instagram"].includes(platform)
+    ["GitHub", "LinkedIn", "Instagram", "Email"].includes(platform)
   );
 
   useEffect(() => {
@@ -100,9 +100,9 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               download
               whileHover={{ scale: 1.02, y: -2, boxShadow: "0 10px 25px rgba(0,0,0,0.15)" }}
-              whileTap={{ scale: 0.96, backgroundColor: "#1f2937", color: "#f9fafb" }}
+              whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 260, damping: 20 }}
-              className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 transition-opacity duration-200"
+              className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:opacity-90 active:opacity-80 transition-all duration-200"
             >
               <Download size={16} />
               <span>Get my Resume</span>
@@ -119,14 +119,16 @@ const Hero: React.FC = () => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 + index * 0.08, duration: 0.3 }}
-                  whileHover={{ y: -3, scale: 1.06, backgroundColor: "#111827", color: "#f9fafb", borderColor: "#111827" }}
-                  whileTap={{ scale: 0.92, backgroundColor: "#1f2937", color: "#f9fafb", borderColor: "#1f2937" }}
-                  className="inline-flex h-11 flex-1 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted"
+                  whileHover={{ y: -3, scale: 1.06 }}
+                  whileTap={{ scale: 0.92 }}
+                  className="inline-flex h-11 flex-1 items-center justify-center rounded-full border-2 border-border text-foreground transition-all duration-200 hover:border-foreground hover:bg-foreground hover:text-background active:border-foreground active:bg-foreground active:text-background"
                 >
                   {platform === "GitHub" ? (
                     <Github size={18} />
                   ) : platform === "LinkedIn" ? (
                     <Linkedin size={18} />
+                  ) : platform === "Email" ? (
+                    <Mail size={18} />
                   ) : (
                     <Instagram size={18} />
                   )}
