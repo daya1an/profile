@@ -36,7 +36,7 @@ const About: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.35 }}
-              className="border border-border rounded-lg p-5 text-center hover:bg-muted/50 transition-colors duration-300"
+              className="border border-border rounded-lg p-3 text-center hover:bg-muted/50 transition-colors duration-300"
             >
               <div
                 style={{ fontSize: getAdaptiveFontSize(stat.value) }}
