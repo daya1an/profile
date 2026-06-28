@@ -121,7 +121,7 @@ export const experienceData: Experience[] = [
     description:
       "Global Application for creating and managing packaging and logistics specifications of Engineering and Service Parts. Modernized legacy infrastructure by upgrading codebase, migrating workloads to OpenShift, strengthening API security, and optimizing batch operations with enterprise standards.",
     highlights: [
-      "Migrated Legacy WAS Liberty application from PCF to Red Hat OpenShift, eliminating AWS S3 and SMB-NAS dependencies by relocating storage to PVC and migrating artifacts from Nexus and local jars to JFrog Artifactory.",
+      "Migrated Legacy WAS Liberty application to Red Hat OpenShift, eliminating AWS S3 and SMB-NAS dependencies by relocating storage to PVC and migrating artifacts from Nexus and local jars to JFrog Artifactory.",
       "Shifted build system from Ant to Gradle and enabled Tekton PAC pipelines, reducing deployment complexity and time significantly.",
       "Deployed APIs and batch jobs on OpenShift using Deployments, Services, Ingress, Egress, Routes, and Secrets while enforcing Kyverno policy compliance.",
       "Developed Dockerfiles and integrated Dynatrace and Splunk via sidecar containers, enabling comprehensive observability during load and performance testing.",
