@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
                 <h3 className="text-base font-semibold text-foreground mb-2">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4 flex-1 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-4 flex-1 leading-relaxed text-justify">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1.5 mb-4">
