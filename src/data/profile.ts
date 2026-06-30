@@ -16,6 +16,6 @@ export const profileData = {
     { label: "Domains", value: "Ecommerce,    Logistics, Catalog" }, 
     { label: "Cloud", value: "AWS, GCP,  OpenShift,  PCF" }, 
   ],
-  resumeUrl: "#",
+  resumeUrl: "https://1drv.ms/b/c/cacf8625b8119cb8/IQDq6Xa0BVp_Rb7tNGVCKta9ATDsawVci2U8mnNK666_3cw?e=etGt2b",
   avatarUrl: "https://raw.githubusercontent.com/daya1an/profile/main/assets/profile-picture.png",
 };

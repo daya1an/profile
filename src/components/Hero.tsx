@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 md:px-8"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 md:px-8 md:py-20"
     >
       <div className="relative max-w-5xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <motion.div
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: revealedStep >= 4 ? 1 : 0, y: revealedStep >= 4 ? 0 : 16 }}
             transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed"
+            className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed text-justify"
           >
             {profileData.tagline}
           </motion.p>
@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
             className="flex flex-col items-center gap-4 lg:items-start w-full"
           >
             <motion.a
-              href="https://raw.githubusercontent.com/daya1an/profile/main/assets/Dayalan%20D%20S%20Resume.pdf"
+              href={profileData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               download
@@ -185,7 +185,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: revealedStep >= 4 ? 1 : 0 }}
         transition={{ delay: 0.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="mt-10 lg:mt-14"
       >
         <a
           href="#about"

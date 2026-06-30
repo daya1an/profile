@@ -87,12 +87,9 @@ export const skillsData: { categories: SkillCategory[] } = {
     {
       name: "AI Tools, Models and Frameworks",
       skills: [
-        { name: "OpenAI", icon: "auto", level: 85 },
         { name: "Google Gemini", icon: "auto", level: 80 },
-        { name: "Claude", icon: "auto", level: 80 },
         { name: "Spring AI", icon: "auto", level: 80 },
-        { name: "LangChain", icon: "auto", level: 75 },
-        { name: "LangGraph", icon: "auto", level: 75 },
+        { name: "Google ADK", icon: "auto", level: 80 },
         { name: "Scikit-Learn", icon: "auto", level: 70 },
       ],
     },
@@ -150,10 +147,9 @@ const deviconMap: Record<string, string> = {
   
   "OpenAI": "chatgpt.svg",
   "Google Gemini": "gemini.svg",
-  "Claude": "claude.svg",
-  "LangChain": "langchain.svg",
-  "LangGraph": "langgraph.svg",
+  "Google ADK": "adk.png",
   "Scikit-Learn": "scikitlearn.svg",
+
 };
 
 export function getIconUrl(skill: Skill): string {
